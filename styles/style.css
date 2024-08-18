@@ -1,0 +1,1660 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+main,
+header {
+  padding: 0px 64px;
+}
+
+nav {
+  height: 121px;
+  width: 100%;
+  padding: 15px 0px;
+}
+
+#navSocial {
+  justify-content: flex-end;
+  display: flex;
+}
+
+#navSocialList {
+  display: flex;
+  list-style: none;
+  height: 15px;
+}
+
+.navSocailLi {
+  margin-right: 16px;
+}
+
+#linkedIn {
+  margin: 0;
+}
+
+#navLayer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navList {
+  display: flex;
+}
+
+#navLinkList {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navLinkLi {
+  margin-left: 32px;
+}
+
+.navLinkLi a {
+  text-decoration: none;
+  padding: 10px 0px;
+  display: inline-block;
+  color: black;
+}
+
+.navLinkLi a:hover {
+  color: rgb(143, 143, 143);
+}
+
+#avatarButton {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 19px;
+}
+
+#avatarButton:hover {
+  background-color: rgb(99, 97, 97);
+}
+
+#avatar {
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-right: 5px;
+}
+
+#navLinkButtonLi {
+  display: flex;
+}
+
+#notificationButton {
+  border: none;
+  background-color: transparent;
+  margin-right: 15px;
+}
+
+#navDropOff {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#navPara {
+  font-size: 10px;
+  justify-content: flex-end;
+  color: #808080;
+  letter-spacing: -3.5%;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+}
+
+.side-bar {
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  width: 300px;
+  height: 543px;
+  padding: 56px 32px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+#closeButtonIcon {
+  float: right;
+}
+
+.drop-navMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.drop-navMenu a {
+  text-decoration: none;
+  color: black;
+  margin: 20px 0px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+}
+
+.loginSignUpButton {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  padding: 4px 20px;
+}
+
+.loginSignUpButton:hover {
+  background-color: rgb(70, 70, 70);
+}
+
+.side-bar.active {
+  display: flex;
+}
+
+.side-bar.inactive {
+  display: none;
+}
+
+/*------ Icons side ------------*/
+.iconss-side {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 120px;
+  z-index: 1;
+}
+
+/* MAIN STYLING */
+/* QUICK BOOK STYLING */
+
+#quickBook {
+  background-image: url(./../resources/assets/Maskgroup.svg);
+  height: 227px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  padding: 18px 81px;
+  position: relative;
+}
+
+.icons-side {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  gap: 20px;
+  top: 180px;
+}
+
+.icons-side button {
+  border: none;
+  background: transparent;
+}
+
+#tabsList {
+  list-style: none;
+  font-size: 14px;
+  display: flex;
+}
+
+.tabsLi {
+  padding: 16px;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabsLi a {
+  color: #dfdfdf;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.tabsLi a:hover {
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+#bookInput {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+#locationSelect,
+#startTime,
+#endTime {
+  padding: 8px 20px;
+  border-radius: 16px;
+  border: none;
+  margin-right: 16px;
+  margin-bottom: 4px;
+  flex: 1;
+}
+
+#searchButton {
+  border-radius: 24px;
+  padding: 2px 16px;
+  border: none;
+  margin-right: 16px;
+  margin-bottom: 4px;
+}
+
+#vDivider {
+  border-right: 1px solid #ffffff;
+  width: 1px;
+  height: 32px;
+  margin-right: 16px;
+}
+
+#quickBookButton {
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: white;
+  padding: 10px 77px;
+  border-radius: 16px;
+}
+
+#appStore {
+  display: flex;
+  align-items: center;
+}
+
+#downloadPara {
+  margin-right: 19px;
+  color: #ffffff;
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.storeDownloadImage {
+  margin-right: 9px;
+}
+
+#vehicleSelect {
+  background-color: #ffffff23;
+  color: #ffffff;
+  border: none;
+  padding: 9px 16px;
+  margin: 14px 0px;
+  border-radius: 50px;
+}
+
+#vehicleSelect option {
+  background-color: #ac171d;
+  color: white;
+}
+
+#quickBookMobile {
+  display: none;
+}
+
+/* summer promotion section */
+/* .banner{
+    position: relative;
+    display: inline-block;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 16px; 
+  }
+  
+  .banner img{
+    width: 100%;
+    display: block;
+  }
+  
+  .banner-text{
+    
+    position: absolute;
+    top: 60%; 
+    left: 40%;
+    color: white; 
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .banner-text button{
+    background-color: seagreen;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: none;
+  }
+  
+  .slides{
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    display: flex;
+  }
+  
+  .slides button{
+    border:none;
+    background: transparent;
+    margin: 5px;
+  } */
+
+.banner {
+  position: relative;
+  display: inline-block;
+  background-size: cover; /* Changed to cover for better responsiveness */
+  background-repeat: no-repeat;
+  padding: 16px;
+}
+
+.banner img {
+  width: 100%;
+  display: block;
+}
+
+.banner-text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.banner-text button {
+  background-color: seagreen;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: none;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.control-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: gray;
+  border: none;
+  cursor: pointer;
+}
+
+.control-btn.active {
+  background-color: white;
+}
+
+/* POPULAR CARS SECTION */
+/* ???????  need to comment this as of no*/
+#popularcars {
+  padding-top: 10px;
+
+  overflow-x: scroll;
+}
+
+#popularCardRow {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: none;
+  scroll-behavior: smooth; /* Optional: smooth scrolling */
+  scrollbar-width: none;
+  padding: 10px 0; /* Optional: adjust padding if needed */
+  /* Ensure this width is greater than the total width of all cards combined */
+  /* to enable horizontal scrolling */
+  /* width: calc(100% - 20px); */
+  width: max-content;
+  /* Adjust width to prevent overflow issues */
+}
+
+#popularcarsH2 {
+  margin: 40px 0;
+  font-size: 34.74px;
+  font-weight: 400;
+  line-height: 52.11px;
+  text-align: center;
+}
+
+.popularCarCard {
+  display: flex;
+  height: 290px;
+  width: 754px;
+  border: 1px solid #d9d9d9;
+  margin-right: 22px;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.popularCarCardInfo {
+  padding: 20px 40px;
+  width: 394px;
+}
+
+.popularCarCardInfoHeading {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 42px;
+}
+
+.popularCarCardInfoPara {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18.5px;
+  text-align: left;
+  width: 298px;
+}
+
+.popularCarUl {
+  list-style: none;
+  display: flex;
+  margin-top: 52px;
+}
+
+.popularcarLi {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 16.5px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  width: auto;
+}
+
+.popularcarLi img {
+  margin-right: 8px;
+}
+
+.popularcarLi p {
+  width: 60px;
+}
+
+.popularCardCost {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+}
+
+.popularCarCardInfo2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 31px;
+}
+.bookNowButton {
+  width: 128px;
+  height: 38px;
+  border-radius: 4px;
+  border: none;
+  opacity: 1; /* Make button visible */
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: white;
+  background-color: #e21e26;
+  margin: 10px 0px;
+}
+
+/* SUBSCRIBE SECTION */
+
+.subscribe-sec-container {
+  display: flex;
+}
+
+#subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  /* padding-left: 89px;
+  padding-top: 40px; */
+}
+
+#subscribeDiv1 {
+}
+
+#subscribeDiv1Heading {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 51px;
+  text-align: left;
+  margin: 38px 40px 38px 0px;
+}
+
+#subscribeDiv1InputDiv input {
+  width: 223px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f8f8f8;
+  padding: 13px 20px;
+  margin-bottom: 16px;
+}
+
+#subscribeDiv1Para {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  text-align: left;
+  margin-bottom: 40px;
+  width: 75%;
+}
+
+#subscribeButton {
+  background-color: #e21e26;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: white;
+  padding: 16px;
+  width: 70%;
+  border: none;
+  border-radius: 5px;
+}
+
+#subscribeDiv2 {
+  background-color: #e21e26;
+  display: flex;
+  padding: 48px 72px;
+}
+#DownloadLinkDiv {
+  width: 50%;
+}
+#mobileAppImg {
+  width: 50%;
+}
+
+#downloadLinkPara {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21.5px;
+  text-align: left;
+  color: white;
+  margin-top: 76px;
+}
+
+#subscribePhoneInput {
+  width: 85%;
+  height: 45px;
+  border-radius: 5px 0px 0px 0px;
+  padding: 22px 13.7px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f8f8f8;
+  margin-bottom: 24px;
+}
+
+#StoreLinks img {
+  display: flex;
+}
+
+#getLinkButton {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 8px;
+}
+
+#getItOnPara {
+  color: white;
+  margin: 45px 0px 16px 0px;
+}
+
+#StoreLinks {
+  display: flex;
+  width: 50%;
+}
+
+#StoreLinks img {
+  margin-left: 8px;
+}
+
+/* SUBSCRIBE DIV2 MOBILE VIEW */
+#subscribeDiv2Mobile {
+  display: none;
+  background-color: #e21e26;
+  border-radius: 8px;
+}
+
+#subscribeDiv2Main {
+  display: flex;
+}
+
+#mobileAppImgMV {
+  width: 136px;
+  height: 245px;
+}
+
+#downloadInputDiv {
+  padding: 16px;
+  width: 55%;
+}
+
+#StoreLinksMV {
+  display: block;
+  padding: 16px;
+}
+
+#subscribePhoneInputMV {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px 0px 0px 0px;
+  padding: 22px 13.7px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f8f8f8;
+  margin-bottom: 16px;
+}
+
+#getItOnParaMV {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15.6px;
+  text-align: left;
+  color: white;
+  margin: 16px 16px 0px 16px;
+}
+
+#downloadLinkParaMV {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15.6px;
+  text-align: left;
+  color: white;
+  margin: 32px 16px 16px 16px;
+  width: 149px;
+}
+
+/* steps */
+#rentSteps {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+#rentStepsRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.rentStepCols {
+  justify-content: center;
+  width: 348px;
+  height: auto;
+}
+
+#rentStepsHeading {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 51px;
+  text-align: center;
+}
+
+.rentSteph3 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  color: #e21e26;
+  margin-top: 40px;
+  margin-bottom: 8px;
+}
+
+.rentStepSubdiv {
+  width: 348px;
+  height: 178px;
+  border: 1px solid black;
+}
+
+.rentStepSubdiv img {
+  margin-top: 16px;
+}
+
+.rentDivPara {
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.5px;
+  text-align: center;
+  margin: 0px 40px 16px 40px;
+}
+
+#location {
+  background-color: black;
+  text-align: center;
+  padding: 40px;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 56px;
+}
+
+#locationHeadings {
+  color: white;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 51px;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+#locationUl {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.locationLi {
+  border-right: 2px solid #ffffff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-left: 56px;
+  padding-right: 56px;
+  margin-bottom: 65px;
+}
+
+.locationLi span {
+  margin-left: 16px;
+  color: #ffffff;
+}
+
+#locationLiEnd {
+  border: none;
+}
+
+/* The accordian section css starts here */
+/* Frequently asked questons****************************************** */
+.faq-section {
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 2.125rem;
+  line-height: 3.188;
+}
+
+.faq-container {
+  max-width: 71.25rem;
+  margin: 0 auto;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px 0;
+}
+
+.eligibility {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.eligibility p {
+  margin: 0;
+}
+
+.icon-container img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.book-car {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.age-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.license {
+  display: none; /* Hide all answers initially */
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.544;
+  opacity: 50%;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  max-height: 0; /* Hide answer content */
+  padding: 0;
+}
+
+.license.expanded {
+  display: block;
+  max-height: 100px; /* Adjust as needed */
+  padding: 1rem 0;
+}
+
+.faq-icon.plus {
+  transform: rotate(0deg);
+}
+
+.faq-icon.minus {
+  transform: rotate(45deg);
+}
+/* The accordian section ends here */
+
+/* Footer section of the page starts here *******************************/
+.footermoblile {
+  display: none;
+}
+
+.footerdiv {
+  display: flex;
+  flex-direction: column;
+  font-family: Poppins, sans-serif;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+}
+
+.footerdiv-2 {
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 34px 0;
+}
+
+.footerdiv-3 {
+  padding-left: 120px;
+  display: flex;
+  width: 100%;
+  max-width: 1257px;
+  align-items: start;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footerdiv-4 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+.footerimg {
+  aspect-ratio: 0.86;
+  object-fit: contain;
+  object-position: center;
+  width: 57px;
+}
+.member-of-the-al-habtoor-group {
+  margin-top: 9px;
+}
+
+.footerdiv-5 {
+  display: flex;
+  align-items: start;
+  gap: 40px 61px;
+  font-size: 13px;
+  flex-wrap: wrap;
+}
+
+.footerdiv-6 {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerhome {
+  align-self: start;
+}
+.footerabout-us {
+  margin-top: 16px;
+}
+.footerservices {
+  margin-top: 16px;
+}
+.footerdiv-7 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.footerlocations {
+  margin-top: 16px;
+}
+.footercontact-us {
+  align-self: stretch;
+  margin-top: 16px;
+}
+.footerdiv-8 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.footerprivacy-policy {
+  margin-top: 16px;
+}
+.footerservice-request {
+  align-self: stretch;
+  margin-top: 18px;
+}
+.footerdiv-9 {
+  display: flex;
+  flex-direction: column;
+}
+.footercareer {
+  align-self: start;
+}
+.footerterms-conditions {
+  margin-top: 17px;
+}
+.footerdiv-10 {
+  margin-right: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 138px;
+  max-width: 100%;
+}
+.footerimg-2 {
+  aspect-ratio: 8.13;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  align-self: stretch;
+  margin-top: 10px;
+}
+.footerimg-3 {
+  aspect-ratio: 2.67;
+  object-fit: contain;
+  object-position: center;
+  width: 64px;
+  margin-top: 31px;
+}
+.al-habtoor-companies {
+  font-size: 13px;
+}
+.footerdiv-11 {
+  display: flex;
+  margin-top: 15px;
+  height: 24px;
+  width: 565px;
+  max-width: 100%;
+  align-items: center;
+  gap: 21px;
+  font-size: 13px;
+  letter-spacing: -0.46px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footerhospitality {
+  line-height: 57px;
+  align-self: stretch;
+  margin: auto 0;
+}
+.footerreal-estate {
+  line-height: 57px;
+  align-self: stretch;
+  margin: auto 0;
+}
+.footereducation {
+  line-height: 57px;
+  align-self: stretch;
+  margin: auto 0;
+}
+.footerpublishing {
+  line-height: 57px;
+  align-self: stretch;
+  margin: auto 0;
+}
+.footerautomotive {
+  align-self: stretch;
+  margin: auto 0;
+}
+.footervehicle-leasing {
+  align-self: stretch;
+  margin: auto 0;
+}
+.footerdiv-12 {
+  align-self: stretch;
+  min-height: 0px;
+  margin-top: 24px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.car-rental-llc-all-rights-reserved {
+  font-size: 12px;
+  margin-top: 24px;
+}
+/* The footer section ends here */
+
+@media only screen and (max-width: 786px) {
+  main,
+  header {
+    padding: 0px 16px;
+  }
+
+  nav {
+    height: 80px;
+    padding: 15px 0px;
+  }
+
+  #companyLogo {
+    width: 156px;
+    height: 24px;
+  }
+
+  .navLinkLi {
+    margin-left: 15px;
+  }
+
+  #navLayer {
+    margin-bottom: 19px;
+  }
+
+  #navPara {
+    height: 15px;
+    overflow: hidden;
+  }
+
+  #name {
+    display: none;
+  }
+
+  #avatar {
+    margin: 0;
+  }
+
+  #avatarButton {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px;
+    padding-right: 6px;
+  }
+
+  /* SUMMER PROMOTION */
+  .banner {
+    height: 200px; /* Adjust height for smaller screens */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin if any */
+    position: relative; /* Ensure it can be layered */
+    z-index: 1; /* Place it behind the side-bar */
+  }
+
+  .banner img {
+    height: 100%; /* Full height */
+    object-fit: cover; /* Crop and cover */
+  }
+
+  .banner-text {
+    padding-top: 5px;
+    top: 50%; /* Adjust position for smaller screens */
+    font-size: 12px; /* Smaller font size */
+  }
+
+  .banner-text button {
+    padding: 3px 6px; /* Smaller button size */
+  }
+
+  .slider-controls {
+    bottom: 20px; /* Adjust position from the bottom */
+    gap: 8px; /* Smaller gap between controls */
+  }
+
+  .control-btn {
+    width: fit-content; /* Smaller button size */
+    height: fit-content; /* Smaller button size */
+  }
+
+  .icons-side {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    gap: 20px;
+    top: 100px;
+  }
+
+  /* POPULAR CAR */
+
+  .popularCarCard {
+    display: block;
+    width: 207px;
+    height: auto;
+  }
+
+  #popularcarsH2 {
+    margin: 40px 0px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 16px 0px;
+  }
+
+  .popularCarCard img {
+    width: 207px;
+  }
+
+  .popularCarCardInfo {
+    padding: 10px;
+    width: 207px;
+  }
+
+  .popularCarCardInfoHeading {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .popularCarCardInfoPara {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.6px;
+    text-align: left;
+    width: auto;
+    height: 49px;
+    overflow: hidden;
+  }
+
+  .popularCarCardInfo2 {
+    display: block;
+  }
+
+  .bookNowButton {
+    margin: 10px 0px;
+  }
+
+  .popularCarUl {
+    list-style: none;
+    display: flex;
+    margin-top: 11px;
+    overflow: hidden;
+  }
+
+  .popularcarLi {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 17px;
+    margin-right: 8px;
+    width: 70px;
+  }
+
+  .popularcarLi img {
+    margin-right: 8px;
+    width: 17px;
+    height: 17px;
+  }
+
+  .popularcarLi p {
+    height: 15px;
+    width: 80px;
+    text-wrap: nowrap;
+  }
+
+  /* SUBSCRIBE */
+  #subscribe {
+    display: block;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  #subscribeDiv1 {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  #subscribeDiv1Heading {
+    margin: 38px 40px 38px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    width: 227px;
+  }
+
+  #subscribeDiv1Para {
+    width: 100%;
+  }
+
+  #subscribeDiv1InputDiv {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #subscribeDiv1InputDiv input {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f8f8f8;
+    padding: 13px 20px;
+    margin-bottom: 16px;
+  }
+
+  #subscribeButton {
+    width: 128px;
+    background-color: #e21e26;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+    /* padding: 9px 32px; */
+    border: none;
+    border-radius: 5px;
+  }
+
+  #subscribeDiv2 {
+    display: none;
+  }
+
+  #subscribeDiv2Mobile {
+    display: block;
+  }
+
+  /* RENT LEASE */
+
+  #rentStepsHeading {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  /* #rentStepsRow {
+        display: block;
+    } */
+
+  /* LOCATION */
+
+  #location {
+    /* background-color: black; */
+    /* text-align: center; */
+    padding: 16px;
+    /* color: white;
+        margin-top: 40px;
+        margin-bottom: 56px; */
+  }
+
+  #locationHeadings {
+    color: white;
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  #locationUl {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    align-items: center;
+    justify-content: left;
+  }
+
+  .locationLi {
+    border-right: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    font-family: "open sans";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.07px;
+    text-align: left;
+  }
+
+  .locationLi span {
+    margin-left: 16px;
+    color: #ffffff;
+  }
+
+  /* FAQ */
+
+  .faq-section {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-wrap: nowrap;
+  }
+
+  .footerdiv {
+    display: none;
+  }
+
+  .footermoblile {
+    display: block;
+  }
+
+  .footermobile {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .top-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; /* Add padding to your preference */
+    background-color: #f4f4f400; /* Background color to match your design */
+  }
+
+  .logo-section {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-section img {
+    max-width: 60px; /* Adjust the size of the logo */
+    margin-right: 10px; /* Space between the logo and text */
+  }
+
+  .al-habtoor-text {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .social-icons-mobile-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icons */
+  }
+
+  .social-icons-mobile-footer a img {
+    max-width: 24px; /* Adjust the size of the social icons */
+  }
+
+  .middle-footer-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .middle-footer-mobile a {
+    margin: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .middle-footer-mobile a:hover {
+    text-decoration: underline;
+  }
+
+  .bottom-footer-mobile {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+  }
+
+  .bottom-footer-mobile {
+    text-align: center;
+  }
+
+  .bottom-footer-mobile p {
+    margin: 10px 0; /* Optional: Adjusts the spacing above and below the paragraph */
+  }
+
+  .companies-mobile-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .companies-mobile-footer a {
+    margin: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .companies-mobile-footer a:hover {
+    text-decoration: underline;
+  }
+
+  .secure-seal-mobile-footer img {
+    width: 80px;
+    margin: 20px 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #navLinkList {
+    display: none;
+  }
+
+  #navSocialList {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  #quickBookMobile {
+    display: block;
+  }
+
+  #bookInput {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+
+  #tabs,
+  #bookInput {
+    display: none;
+  }
+
+  #quickBook {
+    height: 120px;
+    padding: 16px 40px;
+  }
+
+  #appStore {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #downloadPara {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  #quickBookMobile {
+    text-align: center;
+  }
+
+  #bookDropdownMenu {
+    display: flex;
+    text-align: center;
+    margin: 16px 16px;
+    justify-content: center;
+  }
+
+  #BookACar {
+    background-color: #e21e26;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    width: 160px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: center;
+    height: 38px;
+    margin-right: 8px;
+  }
+
+  #BookACar:hover {
+    background-color: #b6171c;
+  }
+
+  #bookQuick {
+    background-color: transparent;
+    border: 2px solid #e21e26;
+    color: #e21e26;
+    border-radius: 8px;
+    background-color: white;
+    width: 160px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: center;
+    height: 38px;
+  }
+
+  #bookQuick:hover {
+    background-color: rgb(219, 219, 219);
+  }
+
+  #bookTabs {
+    display: none;
+  }
+
+  #bookTabs.active {
+    display: block;
+  }
+
+  #tabsListMv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+
+  .tabsLiMv a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 56.74px;
+    letter-spacing: -0.035em;
+    text-align: left;
+    padding: 4px;
+  }
+
+  .tabsLiMv a:hover {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 56.74px;
+    letter-spacing: -0.035em;
+    text-align: left;
+    border-bottom: 1px solid black;
+  }
+
+  #vehicleSelectmv {
+    border: 0;
+  }
+
+  #quickBookLi {
+    list-style: none;
+  }
+
+  #pickupSelectmv,
+  #dropOffLocation,
+  #pickupDate,
+  #dropOffDate {
+    padding: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #f6f7f9;
+    border: none;
+    border-radius: 8px;
+  }
+
+  #quickbookSearch {
+    background-color: #e21e26;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    width: 160px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: center;
+    height: 38px;
+    margin: 16px 64px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #name {
+    display: none;
+  }
+
+  #avatar {
+    margin: 0px;
+  }
+
+  .navLinkLi {
+    margin-left: 8px;
+  }
+
+  #bookInput {
+    margin-bottom: 4px;
+  }
+}
